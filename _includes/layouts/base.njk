@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id:"Kq5Yhoiwz3lvea2l",ck:"Kq5Yhoiwz3lvea2l"})</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="{{ keywords or 'DeepSeek,DeepSeek教程,DeepSeek安装,DeepSeek使用技巧,DeepSeek提示词' }}">
+  <meta name="description" content="{{ description or site.description }}">
+  <title>{{ title }} - {{ site.name }}</title>
+  <link rel="stylesheet" href="/deepseek.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="{{ site.name }}">
+        <img src="https://tse-mm.bing.com/th?q=DeepSeek+Logo" alt="{{ site.name }} Logo" width="44" height="44">
+        <span>{{ site.name }}</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="/">首页</a>
+        <a href="/jiqiao/">使用技巧</a>
+        <a href="/#catalog">目录</a>
+        <a href="/tags/deepseek/">Tags</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>{{ site.name }}</strong>
+        <p>{{ site.description }}</p>
+      </div>
+      <nav aria-label="页脚导航">
+        <a href="/">首页</a>
+        <a href="/jiqiao/">使用技巧</a>
+        <a href="/tags/deepseek/">Tags</a>
+        <a href="/sitemap.xml">站点地图</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

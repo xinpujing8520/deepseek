@@ -1,0 +1,6 @@
+node_modules/
+_site/
+__MACOSX/
+.env
+.env.*
+npm-debug.log*

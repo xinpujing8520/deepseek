@@ -1,0 +1,87 @@
+name: Daily DeepSeek Content
+
+on:
+  schedule:
+    - cron: "15 1 * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Generate 1-9 articles"
+        required: false
+        default: "1"
+      push_all:
+        description: "Submit all built URLs to Bing"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  generate-build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install
+        run: npm install
+
+      - name: Generate article
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-articles.mjs --count=${{ github.event.inputs.count || '1' }}
+
+      - name: Commit generated article
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content
+          if git diff --cached --quiet; then
+            echo "No generated content changes."
+          else
+            git commit -m "Add daily DeepSeek article"
+            git push
+          fi
+
+      - name: Build
+        env:
+          ELEVENTY_ENV: production
+        run: npm run build
+
+      - name: Submit updated URLs to Bing
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.push_all || 'false' }}" = "true" ]; then
+            node scripts/push-bing.mjs --all
+          else
+            node scripts/push-bing.mjs
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

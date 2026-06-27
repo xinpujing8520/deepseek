@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+---
+<section class="article-shell">
+  <div class="container content-grid">
+    <article class="article-body">
+      <p class="eyebrow">{{ category or "使用技巧" }}</p>
+      <h1>{{ title }}</h1>
+      <p class="tagline">{{ description }}</p>
+      <p class="meta">更新于 {{ page.date | readableDate }}</p>
+      {% if cover %}
+      <img src="{{ cover }}" alt="{{ title }} 配图" width="900" height="520" loading="lazy">
+      {% endif %}
+      {% if video %}
+      <section class="video-frame" aria-label="{{ title }} 视频安装教程">
+        <div class="video-screen">
+          <div>
+            <span aria-hidden="true">▶</span>
+            <h2>{{ title }}</h2>
+            <p>{{ video.description }}</p>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "{{ title }}",
+        "description": "{{ video.description }}",
+        "thumbnailUrl": ["{{ video.thumbnail }}"],
+        "uploadDate": "{{ page.date | htmlDateString }}"
+      }
+      </script>
+      {% endif %}
+      {{ content | safe }}
+    </article>
+    <aside class="side-card">
+      <h2>相关 Tags</h2>
+      <div class="tags">
+        {% for tag in tags | readableTags %}
+        <a class="tag-chip" href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      <h2>继续阅读</h2>
+      <p><a href="/jiqiao/">返回使用技巧</a></p>
+      <p><a href="/">回到 DeepSeek 实用资料库</a></p>
+    </aside>
+  </div>
+</section>

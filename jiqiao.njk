@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+title: "DeepSeek 使用技巧目录"
+description: "DeepSeek 安装、提示词、接口接入、表格处理和代码阅读等实操文章目录。"
+keywords: "DeepSeek使用技巧,DeepSeek安装教程,DeepSeek提示词,DeepSeek API"
+permalink: /jiqiao/index.html
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">目录</p>
+    <h1>DeepSeek 使用技巧目录</h1>
+    <p class="tagline">从安装到日常任务，按真实问题整理，方便逐篇查阅。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container toc-list">
+    {% for post in collections.articles %}
+    <article class="toc-card">
+      <img src="{{ post.data.cover }}" alt="{{ post.data.title }} 配图" width="240" height="160" loading="lazy">
+      <div>
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <p>{{ post.data.description }}</p>
+        <p class="meta">{{ post.date | readableDate }}</p>
+        <div class="tags">
+          {% for tag in post.data.tags | readableTags %}
+          <a class="tag-chip" href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

