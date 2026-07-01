@@ -8,15 +8,18 @@ tags:
   - deepseek
   - long-text
   - steps
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E9%95%BF%E6%96%87%E5%A4%84%E7%90%86"
+cover: "/static/images/photo-1563986768609-322da13575f3.jpg"
 permalink: /jiqiao/2026-06-16-deepseek-long-text/index.html
+generated: true
 ---
 
 ## 我这次怎么试
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-16 我用 DeepSeek 2026.06 使用环境 试了「长文处理」这个场景。我的目标很简单：看看它能不能把零散材料整理成一版能继续修改的草稿，而不是追求一次到位。
 
-![长文处理 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E9%95%BF%E6%96%87%E5%A4%84%E7%90%86)
+![长文处理 示意图](/static/images/photo-1563986768609-322da13575f3.jpg)
 
 ## 三步操作
 
@@ -59,3 +62,10 @@ permalink: /jiqiao/2026-06-16-deepseek-long-text/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

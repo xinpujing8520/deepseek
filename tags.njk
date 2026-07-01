@@ -11,10 +11,13 @@ pagination:
     - posts
     - article
     - articles
+    - indexablePosts
+    - homepagePosts
 permalink: /tags/{{ tag | tagSlug }}/index.html
 eleventyComputed:
   title: "DeepSeek {{ tag }} Tags"
   description: "DeepSeek {{ tag }} 相关实操内容集合。"
+  noindex: true
 ---
 <section class="page-hero">
   <div class="container">
@@ -28,7 +31,10 @@ eleventyComputed:
   <div class="container toc-list">
     {% for post in collections[tag] | reverse %}
     <article class="toc-card">
-      <img src="{{ post.data.cover }}" alt="{{ post.data.title }} 配图" width="240" height="160" loading="lazy">
+      {% set cardCover = post.data.coverImage or post.data.cover %}
+      {% if cardCover %}
+      <img src="{{ cardCover | assetUrl }}" alt="{{ post.data.title }} 配图" width="240" height="160" loading="lazy">
+      {% endif %}
       <div>
         <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
         <p>{{ post.data.description }}</p>

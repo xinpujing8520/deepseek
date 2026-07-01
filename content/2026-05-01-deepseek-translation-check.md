@@ -8,15 +8,18 @@ tags:
   - deepseek
   - translation-check
   - checklist
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E7%BF%BB%E8%AF%91%E6%A0%A1%E5%AF%B9"
+cover: "/static/images/photo-1620712943543-bcc4688e7485.jpg"
 permalink: /jiqiao/2026-05-01-deepseek-translation-check/index.html
+generated: true
 ---
 
 ## 我先列一张小清单
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-01 这天我试着用 DeepSeek 处理「翻译校对」。这类任务不用一上来写长提示，我更喜欢先列清单，把要做的事情拆成能打勾的小项。
 
-![翻译校对 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E7%BF%BB%E8%AF%91%E6%A0%A1%E5%AF%B9)
+![翻译校对 示意图](/static/images/photo-1620712943543-bcc4688e7485.jpg)
 
 ## 准备清单
 
@@ -54,3 +57,9 @@ permalink: /jiqiao/2026-05-01-deepseek-translation-check/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)

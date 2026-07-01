@@ -8,15 +8,18 @@ tags:
   - deepseek
   - outline-review
   - note
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%8F%90%E7%BA%B2%E6%A3%80%E6%9F%A5"
+cover: "/static/images/photo-1522071820081-009f0129c71c.jpg"
 permalink: /jiqiao/2026-06-14-deepseek-outline-review/index.html
+generated: true
 ---
 
 ## 我这次怎么试
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-14 我用 DeepSeek 2026.06 使用环境 试了「提纲检查」这个场景。我的目标很简单：看看它能不能把零散材料整理成一版能继续修改的草稿，而不是追求一次到位。
 
-![提纲检查 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%8F%90%E7%BA%B2%E6%A3%80%E6%9F%A5)
+![提纲检查 示意图](/static/images/photo-1522071820081-009f0129c71c.jpg)
 
 ## 三步操作
 
@@ -59,3 +62,10 @@ permalink: /jiqiao/2026-06-14-deepseek-outline-review/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

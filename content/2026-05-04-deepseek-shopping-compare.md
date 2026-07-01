@@ -8,15 +8,18 @@ tags:
   - deepseek
   - shopping-compare
   - short
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E9%80%89%E8%B4%AD%E5%AF%B9%E6%AF%94"
+cover: "/static/images/photo-1454165804606-c3d57bc86b40.jpg"
 permalink: /jiqiao/2026-05-04-deepseek-shopping-compare/index.html
+generated: true
 ---
 
 ## 这是一条使用快记
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-04 我用 DeepSeek 2026.06 使用环境 试了下「选购对比」。这次没有做复杂测试，只记录一个很实际的感受：DeepSeek 更适合从小任务切入。
 
-![选购对比 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E9%80%89%E8%B4%AD%E5%AF%B9%E6%AF%94)
+![选购对比 示意图](/static/images/photo-1454165804606-c3d57bc86b40.jpg)
 
 ## 我怎么试的
 
@@ -49,3 +52,10 @@ permalink: /jiqiao/2026-05-04-deepseek-shopping-compare/index.html
 ## 最后的小提醒
 
 我会把 DeepSeek 的结果当成“可修改草稿”。这个定位比较舒服：它帮我省掉从 0 到 1 的时间，我负责判断、删减和确认。这样用下来，压力小很多，也不容易被第一版结果带着跑。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

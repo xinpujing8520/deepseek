@@ -5,8 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy",
-    "generate": "node scripts/generate-articles.mjs"
+    "validate:svg": "node tools/validate-svgs.js",
+    "fix:bing-images": "node tools/fix-bing-images.js",
+    "fix:links": "node tools/add-internal-links.js",
+    "mark:generated": "node tools/mark-generated.js",
+    "build": "npm run validate:svg && eleventy",
+    "generate": "node scripts/generate-articles.mjs",
+    "bing:push": "node tools/bing-instant-push.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",

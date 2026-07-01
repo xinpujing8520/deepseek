@@ -8,15 +8,18 @@ tags:
   - deepseek
   - browser-use
   - case
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%BF%E7%94%A8"
+cover: "/static/images/photo-1507238691740-187a5b1d37b8.jpg"
 permalink: /jiqiao/2026-05-27-deepseek-browser-use/index.html
+generated: true
 ---
 
 ## 一个真实小场景
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-27 我拿「浏览器使用」做了一次小测试，环境是 DeepSeek 2026.06 使用环境。原始材料不多，只有一段说明、几个限制条件和一个希望输出的样子。
 
-![浏览器使用 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%BF%E7%94%A8)
+![浏览器使用 示意图](/static/images/photo-1507238691740-187a5b1d37b8.jpg)
 
 ## 一开始哪里不顺
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-05-27-deepseek-browser-use/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

@@ -3,25 +3,28 @@ layout: layouts/article.njk
 title: "DeepSeek Windows 安装视频教程：我按 2026.06 版本跑了一遍"
 description: "记录 DeepSeek 在 Windows 10/11 上的安装、登录、快捷方式与常见问题处理，适合第一次配置的用户。"
 date: 2026-06-27
+featured: true
 category: "安装教程"
 tags:
   - deepseek
   - windows-install
   - install-guide
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+Windows+install"
+coverImage: "/static/posts/deepseek-login-cover.svg"
 permalink: /jiqiao/deepseek-windows-install/index.html
 video:
   description: "按 Windows 10 22H2 与 Windows 11 23H2 的实际界面录制思路整理，包含下载、安装、登录和报错处理。"
-  thumbnail: "https://tse-mm.bing.com/th?q=DeepSeek+Windows+install+video"
+  thumbnail: "/static/posts/deepseek-login-step.svg"
 ---
 
 ## 准备工作
 
-我这次测试用的是 Windows 10 22H2 和 Windows 11 23H2，两台机器都在 2026 年 6 月 27 日重新跑了一遍安装流程。整体不复杂，但有几个小地方容易卡住，比如浏览器下载提示、系统权限弹窗、桌面快捷方式没有出现。
+我这次测试用的是 Windows 10 22H2 和 Windows 11 23H2，两台机器都在 2026 年 6 月 27 日重新跑了一遍安装流程。Mac 用户可看 [macOS 配置记录](/jiqiao/deepseek-macos-setup/)；装好后若要接入脚本，建议继续看 [API 第一次请求](/jiqiao/deepseek-api-first-request/)。网页版入口：[DeepSeek Chat](https://chat.deepseek.com)。
+
+整体不复杂，但有几个小地方容易卡住，比如浏览器下载提示、系统权限弹窗、桌面快捷方式没有出现。
 
 先准备三样东西：稳定网络、常用浏览器、一个能接收验证码的账号。如果电脑上开了很严格的安全策略，建议先确认下载目录能正常写入文件。
 
-![DeepSeek Windows 安装准备](https://tse-mm.bing.com/th?q=DeepSeek+Windows+setup+checklist)
+![DeepSeek Windows 安装准备](/static/images/photo-1496065187959-7f07b8353c55.jpg)
 
 ## 操作步骤
 

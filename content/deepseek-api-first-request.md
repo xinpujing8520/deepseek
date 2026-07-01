@@ -3,20 +3,23 @@ layout: layouts/article.njk
 title: "DeepSeek API 第一次请求：用 20 分钟跑通一个小例子"
 description: "面向轻量开发者的 DeepSeek API 入门记录，包含准备、请求、返回结果检查和失败处理。"
 date: 2026-06-24
+featured: true
 category: "接口接入"
 tags:
   - deepseek
   - api-start
   - developer
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+API+first+request"
+coverImage: "/static/posts/deepseek-api-key-cover.svg"
 permalink: /jiqiao/deepseek-api-first-request/index.html
 ---
 
 ## 适合谁看
 
-这篇写给想把 DeepSeek 接到脚本、小工具或内部页面里的朋友。我用 2026.06 的 Node.js 20 环境跑了一次，目标不是做复杂项目，只是先确认能请求、能拿到结果、能处理错误。
+这篇写给想把 DeepSeek 接到脚本、小工具或内部页面里的朋友。接入前可先看 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)；若遇到报错排查，可参考 [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)。Key 请在 [DeepSeek 开放平台](https://platform.deepseek.com) 申请。
 
-![DeepSeek API 请求示意](https://tse-mm.bing.com/th?q=DeepSeek+API+code)
+我用 2026.06 的 Node.js 20 环境跑了一次，目标不是做复杂项目，只是先确认能请求、能拿到结果、能处理错误。
+
+![DeepSeek API 请求示意](/static/images/photo-1552664730-d307ca884978.jpg)
 
 ## 操作步骤
 

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - local-notes
   - note
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%9C%AC%E5%9C%B0%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86"
+cover: "/static/images/photo-1523961131990-5ea7c61b2107.jpg"
 permalink: /jiqiao/2026-04-01-deepseek-local-notes/index.html
+generated: true
 ---
 
 ## 我这次怎么试
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [macOS 配置](/jiqiao/deepseek-macos-setup/)。
+
 
 2026-04-01 我用 DeepSeek 2026.06 使用环境 试了「本地资料整理」这个场景。我的目标很简单：看看它能不能把零散材料整理成一版能继续修改的草稿，而不是追求一次到位。
 
-![本地资料整理 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%9C%AC%E5%9C%B0%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86)
+![本地资料整理 示意图](/static/images/photo-1523961131990-5ea7c61b2107.jpg)
 
 ## 三步操作
 
@@ -59,3 +62,9 @@ permalink: /jiqiao/2026-04-01-deepseek-local-notes/index.html
 ## 我会保留的原始信息
 
 日期、版本号、金额、姓名、地址、账号、承诺时间，这些我都会要求它原样保留。2026-04-01 这次整理时，我还会在提示里写一句“无法判断的内容不要补写”。这句话能减少它替你脑补。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [macOS 配置](/jiqiao/deepseek-macos-setup/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

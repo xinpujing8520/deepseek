@@ -8,15 +8,18 @@ tags:
   - deepseek
   - resume-edit
   - checklist
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E7%AE%80%E5%8E%86%E4%BF%AE%E6%94%B9"
+cover: "/static/images/photo-1504384308090-c894fdcc538d.jpg"
 permalink: /jiqiao/2026-04-18-deepseek-resume-edit/index.html
+generated: true
 ---
 
 ## 我先列一张小清单
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)。
+
 
 2026-04-18 这天我试着用 DeepSeek 处理「简历修改」。这类任务不用一上来写长提示，我更喜欢先列清单，把要做的事情拆成能打勾的小项。
 
-![简历修改 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E7%AE%80%E5%8E%86%E4%BF%AE%E6%94%B9)
+![简历修改 示意图](/static/images/photo-1504384308090-c894fdcc538d.jpg)
 
 ## 准备清单
 
@@ -54,3 +57,10 @@ permalink: /jiqiao/2026-04-18-deepseek-resume-edit/index.html
 ## 我会保留的原始信息
 
 日期、版本号、金额、姓名、地址、账号、承诺时间，这些我都会要求它原样保留。2026-04-18 这次整理时，我还会在提示里写一句“无法判断的内容不要补写”。这句话能减少它替你脑补。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

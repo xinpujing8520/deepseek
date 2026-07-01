@@ -8,15 +8,18 @@ tags:
   - deepseek
   - daily-review
   - qa
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%97%A5%E5%A4%8D%E7%9B%98"
+cover: "/static/images/photo-1542831371-29b0f74f9713.jpg"
 permalink: /jiqiao/2026-05-31-deepseek-daily-review/index.html
+generated: true
 ---
 
 ## 我这次主要问了几个点
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [API 第一次请求](/jiqiao/deepseek-api-first-request/)。
+
 
 2026-05-31 我围绕「日复盘」做了一轮小测试。为了不写成教程，我直接把自己当时的几个追问记下来，后面再补处理方式。
 
-![日复盘 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%97%A5%E5%A4%8D%E7%9B%98)
+![日复盘 示意图](/static/images/photo-1542831371-29b0f74f9713.jpg)
 
 ## 这个场景要先给什么？
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-05-31-deepseek-daily-review/index.html
 ## 最后的小提醒
 
 我会把 DeepSeek 的结果当成“可修改草稿”。这个定位比较舒服：它帮我省掉从 0 到 1 的时间，我负责判断、删减和确认。这样用下来，压力小很多，也不容易被第一版结果带着跑。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

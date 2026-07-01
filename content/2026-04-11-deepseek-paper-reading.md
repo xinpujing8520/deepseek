@@ -8,15 +8,18 @@ tags:
   - deepseek
   - paper-reading
   - qa
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB"
+cover: "/static/images/photo-1461749280684-dccba630e2f6.jpg"
 permalink: /jiqiao/2026-04-11-deepseek-paper-reading/index.html
+generated: true
 ---
 
 ## 我这次主要问了几个点
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [API 第一次请求](/jiqiao/deepseek-api-first-request/)。
+
 
 2026-04-11 我围绕「论文阅读」做了一轮小测试。为了不写成教程，我直接把自己当时的几个追问记下来，后面再补处理方式。
 
-![论文阅读 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB)
+![论文阅读 示意图](/static/images/photo-1461749280684-dccba630e2f6.jpg)
 
 ## 这个场景要先给什么？
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-04-11-deepseek-paper-reading/index.html
 ## 我的复盘方法
 
 我通常会把第一版结果分成三类：能直接用、稍微改、完全不对。完全不对的内容不会继续追问，我会回到提示里补条件。这样比对着错误结果一直修更省事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - team-template
   - short
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E5%9B%A2%E9%98%9F%E6%A8%A1%E6%9D%BF"
+cover: "/static/images/photo-1581092795360-fd1ca04f0952.jpg"
 permalink: /jiqiao/2026-05-29-deepseek-team-template/index.html
+generated: true
 ---
 
 ## 这是一条使用快记
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-29 我用 DeepSeek 2026.06 使用环境 试了下「团队模板」。这次没有做复杂测试，只记录一个很实际的感受：DeepSeek 更适合从小任务切入。
 
-![团队模板 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E5%9B%A2%E9%98%9F%E6%A8%A1%E6%9D%BF)
+![团队模板 示意图](/static/images/photo-1581092795360-fd1ca04f0952.jpg)
 
 ## 我怎么试的
 
@@ -49,3 +52,10 @@ permalink: /jiqiao/2026-05-29-deepseek-team-template/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

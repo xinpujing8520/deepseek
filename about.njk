@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: 关于本站
+description: DeepSeek 实用资料库的定位、内容来源、收录政策与联系方式。本站为第三方技术整理，非 DeepSeek 官方网站。
+permalink: /about/index.html
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>关于 {{ site.brand }}</h1>
+    <p class="tagline">第三方 DeepSeek 使用说明与实操整理，面向简体中文用户。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:760px;line-height:1.8;color:#475569;">
+    <h2>本站是什么</h2>
+    <p>{{ site.brand }}（{{ site.url }}）整理 DeepSeek 安装、API 接入、提示词、日常办公与代码阅读等实操内容。<strong>不是</strong> DeepSeek 官方网站。</p>
+
+    <h2>内容如何产生</h2>
+    <ul>
+      <li><strong>核心教程</strong>：人工撰写或精修，优先收录进搜索引擎（见 <a href="/jiqiao/">使用技巧目录</a> 中带 <code>featured</code> 的 pillar 文章）。</li>
+      <li><strong>参考文章</strong>：部分由自动化工具辅助生成，用于补充长尾场景；默认 <code>noindex</code>，不进 sitemap。</li>
+    </ul>
+
+    <h2>核心教程入口</h2>
+    <ul>
+      <li><a href="/jiqiao/deepseek-api-first-request/">DeepSeek API 第一次请求</a></li>
+      <li><a href="/jiqiao/deepseek-prompt-writing/">DeepSeek 提示词怎么写</a></li>
+      <li><a href="/jiqiao/deepseek-windows-install/">Windows 安装 DeepSeek</a></li>
+      <li><a href="/jiqiao/deepseek-macos-setup/">macOS 安装与配置</a></li>
+      <li><a href="/jiqiao/deepseek-code-review/">用 DeepSeek 读代码</a></li>
+      <li><a href="/jiqiao/deepseek-excel-workflow/">DeepSeek 处理 Excel</a></li>
+    </ul>
+
+    <h2>免责声明</h2>
+    <p>文内涉及的 API 价格、模型版本、功能上限可能随官方更新而变化，请以 DeepSeek 官方公告为准。</p>
+  </div>
+</section>

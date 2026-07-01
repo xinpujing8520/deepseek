@@ -3,20 +3,23 @@ layout: layouts/article.njk
 title: "DeepSeek macOS 设置记录：从下载到固定到 Dock"
 description: "按 2026.06 的 macOS Sonoma 与 Sequoia 使用环境，整理 DeepSeek 打开、权限和快捷方式处理。"
 date: 2026-06-26
+featured: true
 category: "安装教程"
 tags:
   - deepseek
   - macos-setup
   - install-guide
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+macOS+setup"
+coverImage: "/static/posts/deepseek-ollama-cover.svg"
 permalink: /jiqiao/deepseek-macos-setup/index.html
 ---
 
 ## 先说测试环境
 
-这篇是我在 2026 年 6 月 26 日用 macOS Sonoma 14.5 和 macOS Sequoia 15.x 试出来的记录。macOS 上安装 DeepSeek 不难，真正容易让人犹豫的是权限提示和 Dock 固定。
+这篇是我在 2026 年 6 月 26 日用 macOS Sonoma 14.5 和 macOS Sequoia 15.x 试出来的记录。Windows 安装流程见 [Windows 安装教程](/jiqiao/deepseek-windows-install/)；若要本地跑模型，可结合 [Ollama 文档](https://ollama.com) 与站内 [API 第一次请求](/jiqiao/deepseek-api-first-request/) 做后续接入。
 
-![DeepSeek macOS 设置界面](https://tse-mm.bing.com/th?q=DeepSeek+macOS+app+settings)
+macOS 上安装 DeepSeek 不难，真正容易让人犹豫的是权限提示和 Dock 固定。
+
+![DeepSeek macOS 设置界面](/static/images/photo-1557683316-973673baf926.jpg)
 
 ## 操作步骤
 

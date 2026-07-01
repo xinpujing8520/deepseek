@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-  <script>LA.init({id:"Kq5Yhoiwz3lvea2l",ck:"Kq5Yhoiwz3lvea2l"})</script>
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js" defer></script>
+  <script>window.addEventListener("load",function(){if(window.LA){LA.init({id:"{{ site.laId }}",ck:"{{ site.laId }}"})}})</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="{{ keywords or 'DeepSeek,DeepSeek教程,DeepSeek安装,DeepSeek使用技巧,DeepSeek提示词' }}">
-  <meta name="description" content="{{ description or site.description }}">
-  <title>{{ title }} - {{ site.name }}</title>
-  <link rel="stylesheet" href="/deepseek.css">
+  {% set docTitle = title or site.title %}
+  {% set metaDescription = description or site.description %}
+  {% set canonicalPath = canonicalUrl or page.url or "/" %}
+  {% set canonical = site.url + canonicalPath %}
+  {% set shareImage = (ogImage or coverImage or cover or site.ogImage or "/static/posts/deepseek-prompt-cover.svg") | assetUrl %}
+  {% set shareImageAbs = site.url + shareImage %}
+  <title>{% if page.url != "/" %}{{ docTitle }} | {{ site.brand }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ metaDescription }}">
+  <meta name="keywords" content="{{ keywords or pageKeywords or site.keywords }}">
+  {% if noindex %}
+  <meta name="robots" content="noindex,follow">
+  {% else %}
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  {% endif %}
+  <link rel="canonical" href="{{ canonical }}">
+  <meta property="og:type" content="{% if layout == 'layouts/article.njk' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ docTitle }}">
+  <meta property="og:description" content="{{ metaDescription }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:site_name" content="{{ site.brand }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:image" content="{{ shareImageAbs }}">
+  <meta property="og:image:alt" content="{{ docTitle }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ shareImageAbs }}">
+  <script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": site.brand,
+  "url": site.url,
+  "description": site.description
+} | dump | safe }}
+  </script>
+  <link rel="stylesheet" href="/deepseek.css?v={{ site.assetVersion }}">
   <link rel="icon" href="/favicon.ico">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="/" aria-label="{{ site.name }}">
-        <img src="https://tse-mm.bing.com/th?q=DeepSeek+Logo" alt="{{ site.name }} Logo" width="44" height="44">
-        <span>{{ site.name }}</span>
+      <a class="brand" href="/" aria-label="{{ site.brand }}">
+        <img src="/static/posts/deepseek-prompt-cover.svg" alt="{{ site.brand }} Logo" width="44" height="44">
+        <span>{{ site.brand }}</span>
       </a>
       <nav class="site-nav" aria-label="主导航">
         <a href="/">首页</a>
-        <a href="/jiqiao/">使用技巧</a>
-        <a href="/#catalog">目录</a>
-        <a href="/tags/deepseek/">Tags</a>
+        <a href="/jiqiao/" {% if page.url.startsWith('/jiqiao/') %}aria-current="page"{% endif %}>使用技巧</a>
+        <a href="/about/" {% if page.url.startsWith('/about/') %}aria-current="page"{% endif %}>关于</a>
       </nav>
     </div>
   </header>
@@ -32,13 +62,14 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <strong>{{ site.name }}</strong>
+        <strong>{{ site.brand }}</strong>
         <p>{{ site.description }}</p>
+        <p style="font-size:13px;color:#64748b;margin-top:8px;">本站为第三方技术整理，非 DeepSeek 官方网站。<a href="/about/">关于本站</a></p>
       </div>
       <nav aria-label="页脚导航">
         <a href="/">首页</a>
         <a href="/jiqiao/">使用技巧</a>
-        <a href="/tags/deepseek/">Tags</a>
+        <a href="/about/">关于</a>
         <a href="/sitemap.xml">站点地图</a>
       </nav>
     </div>

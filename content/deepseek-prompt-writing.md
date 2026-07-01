@@ -3,20 +3,23 @@ layout: layouts/article.njk
 title: "DeepSeek 提示词怎么写更顺手：我常用的三段式"
 description: "用任务、素材、口吻三段式组织 DeepSeek 输入，减少反复补充信息的次数。"
 date: 2026-06-25
+featured: true
 category: "使用技巧"
 tags:
   - deepseek
   - prompt-writing
   - daily-work
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+prompt+writing"
+coverImage: "/static/posts/deepseek-prompt-cover.svg"
 permalink: /jiqiao/deepseek-prompt-writing/index.html
 ---
 
 ## 为什么我改成三段式
 
-我以前问 DeepSeek 时，经常一句话丢过去，结果出来后再补一句“不要太正式”“加一点例子”“短一点”。2026 年 6 月这段时间我换了一个更简单的写法：任务、素材、口吻分三段写，效果明显更稳。
+我以前问 DeepSeek 时，经常一句话丢过去，结果出来后再补一句“不要太正式”“加一点例子”“短一点”。写 API 调用前也可以先看 [API 第一次请求](/jiqiao/deepseek-api-first-request/)；处理表格类任务时，[Excel 工作流](/jiqiao/deepseek-excel-workflow/) 里的拆字段思路同样适用。
 
-![DeepSeek 提示词写法](https://tse-mm.bing.com/th?q=DeepSeek+prompt+template)
+2026 年 6 月这段时间我换了一个更简单的写法：任务、素材、口吻分三段写，效果明显更稳。
+
+![DeepSeek 提示词写法](/static/images/photo-1581092921461-eab62e97a780.jpg)
 
 ## 操作步骤
 

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - new-user
   - review
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%96%B0%E6%89%8B%E4%B8%8A%E6%89%8B"
+cover: "/static/images/photo-1510511459019-5dda7724fd87.jpg"
 permalink: /jiqiao/2026-05-24-deepseek-new-user/index.html
+generated: true
 ---
 
 ## 这次我看了三项
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [Windows 安装](/jiqiao/deepseek-windows-install/)。
+
 
 2026-05-24 我用 DeepSeek 2026.04 桌面环境 重新试了「新手上手」这个场景。说实话，这类任务最怕写得太大，最后看起来很厉害，实际落不到手上。我这次只看三项：输入准备、输出稳定度、后续修改成本。
 
-![新手上手 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%96%B0%E6%89%8B%E4%B8%8A%E6%89%8B)
+![新手上手 示意图](/static/images/photo-1510511459019-5dda7724fd87.jpg)
 
 ## 输入准备：7 分
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-05-24-deepseek-new-user/index.html
 ## 我会保留的原始信息
 
 日期、版本号、金额、姓名、地址、账号、承诺时间，这些我都会要求它原样保留。2026-05-24 这次整理时，我还会在提示里写一句“无法判断的内容不要补写”。这句话能减少它替你脑补。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [Windows 安装](/jiqiao/deepseek-windows-install/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - faq-draft
   - case
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E4%BA%A7%E5%93%81%E7%AD%94%E7%96%91"
+cover: "/static/images/photo-1552664730-d307ca884978.jpg"
 permalink: /jiqiao/2026-06-09-deepseek-faq-draft/index.html
+generated: true
 ---
 
 ## 一个真实小场景
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-09 我拿「产品答疑」做了一次小测试，环境是 DeepSeek 2026.06 使用环境。原始材料不多，只有一段说明、几个限制条件和一个希望输出的样子。
 
-![产品答疑 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E4%BA%A7%E5%93%81%E7%AD%94%E7%96%91)
+![产品答疑 示意图](/static/images/photo-1552664730-d307ca884978.jpg)
 
 ## 一开始哪里不顺
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-06-09-deepseek-faq-draft/index.html
 ## 最后的小提醒
 
 我会把 DeepSeek 的结果当成“可修改草稿”。这个定位比较舒服：它帮我省掉从 0 到 1 的时间，我负责判断、删减和确认。这样用下来，压力小很多，也不容易被第一版结果带着跑。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

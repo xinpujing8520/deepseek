@@ -8,15 +8,18 @@ tags:
   - deepseek
   - release-note
   - short
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E"
+cover: "/static/images/photo-1522071820081-009f0129c71c.jpg"
 permalink: /jiqiao/2026-06-11-deepseek-release-note/index.html
+generated: true
 ---
 
 ## 这是一条使用快记
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-11 我用 DeepSeek 2026.06 使用环境 试了下「更新说明」。这次没有做复杂测试，只记录一个很实际的感受：DeepSeek 更适合从小任务切入。
 
-![更新说明 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E)
+![更新说明 示意图](/static/images/photo-1522071820081-009f0129c71c.jpg)
 
 ## 我怎么试的
 
@@ -49,3 +52,10 @@ permalink: /jiqiao/2026-06-11-deepseek-release-note/index.html
 ## 我会保留的原始信息
 
 日期、版本号、金额、姓名、地址、账号、承诺时间，这些我都会要求它原样保留。2026-06-11 这次整理时，我还会在提示里写一句“无法判断的内容不要补写”。这句话能减少它替你脑补。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

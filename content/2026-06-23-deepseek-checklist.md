@@ -8,15 +8,18 @@ tags:
   - deepseek
   - checklist
   - short
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95"
+cover: "/static/images/photo-1444703686981-a3abbc4d4fe3.jpg"
 permalink: /jiqiao/2026-06-23-deepseek-checklist/index.html
+generated: true
 ---
 
 ## 这是一条使用快记
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-23 我用 DeepSeek 2026.06 使用环境 试了下「检查清单」。这次没有做复杂测试，只记录一个很实际的感受：DeepSeek 更适合从小任务切入。
 
-![检查清单 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95)
+![检查清单 示意图](/static/images/photo-1444703686981-a3abbc4d4fe3.jpg)
 
 ## 我怎么试的
 
@@ -49,3 +52,10 @@ permalink: /jiqiao/2026-06-23-deepseek-checklist/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

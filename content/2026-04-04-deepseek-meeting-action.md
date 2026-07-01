@@ -8,15 +8,18 @@ tags:
   - deepseek
   - meeting-action
   - review
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81"
+cover: "/static/images/photo-1568605117036-5fe5e7bab0b7.jpg"
 permalink: /jiqiao/2026-04-04-deepseek-meeting-action/index.html
+generated: true
 ---
 
 ## 这次我看了三项
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-04-04 我用 DeepSeek 2026.04 桌面环境 重新试了「会议纪要」这个场景。说实话，这类任务最怕写得太大，最后看起来很厉害，实际落不到手上。我这次只看三项：输入准备、输出稳定度、后续修改成本。
 
-![会议纪要 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81)
+![会议纪要 示意图](/static/images/photo-1568605117036-5fe5e7bab0b7.jpg)
 
 ## 输入准备：7 分
 
@@ -53,3 +56,9 @@ permalink: /jiqiao/2026-04-04-deepseek-meeting-action/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [Windows 安装](/jiqiao/deepseek-windows-install/)

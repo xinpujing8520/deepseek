@@ -8,15 +8,18 @@ tags:
   - deepseek
   - reading-summary
   - short
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0"
+cover: "/static/images/photo-1607604276583-eef5d076aa5f.jpg"
 permalink: /jiqiao/2026-04-22-deepseek-reading-summary/index.html
+generated: true
 ---
 
 ## 这是一条使用快记
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-04-22 我用 DeepSeek 2026.06 使用环境 试了下「读书笔记」。这次没有做复杂测试，只记录一个很实际的感受：DeepSeek 更适合从小任务切入。
 
-![读书笔记 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0)
+![读书笔记 示意图](/static/images/photo-1607604276583-eef5d076aa5f.jpg)
 
 ## 我怎么试的
 
@@ -49,3 +52,10 @@ permalink: /jiqiao/2026-04-22-deepseek-reading-summary/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

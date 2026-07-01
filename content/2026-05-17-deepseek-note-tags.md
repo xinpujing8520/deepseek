@@ -8,15 +8,18 @@ tags:
   - deepseek
   - note-tags
   - short
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E7%AC%94%E8%AE%B0%E6%A0%87%E7%AD%BE"
+cover: "/static/images/photo-1544383835-bda2bc66a55d.jpg"
 permalink: /jiqiao/2026-05-17-deepseek-note-tags/index.html
+generated: true
 ---
 
 ## 这是一条使用快记
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-17 我用 DeepSeek 2026.06 使用环境 试了下「笔记标签」。这次没有做复杂测试，只记录一个很实际的感受：DeepSeek 更适合从小任务切入。
 
-![笔记标签 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E7%AC%94%E8%AE%B0%E6%A0%87%E7%AD%BE)
+![笔记标签 示意图](/static/images/photo-1544383835-bda2bc66a55d.jpg)
 
 ## 我怎么试的
 
@@ -49,3 +52,10 @@ permalink: /jiqiao/2026-05-17-deepseek-note-tags/index.html
 ## 我的复盘方法
 
 我通常会把第一版结果分成三类：能直接用、稍微改、完全不对。完全不对的内容不会继续追问，我会回到提示里补条件。这样比对着错误结果一直修更省事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

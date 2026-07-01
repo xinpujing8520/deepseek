@@ -3,20 +3,21 @@ layout: layouts/article.njk
 title: "DeepSeek 处理 Excel 文本：别整表硬塞，先拆字段"
 description: "用 DeepSeek 处理表格文本、备注、分类和说明时的实操方法，适合运营、客服和行政场景。"
 date: 2026-06-23
+featured: true
 category: "办公场景"
 tags:
   - deepseek
   - excel-workflow
   - office
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+Excel+workflow"
+coverImage: "/static/posts/deepseek-prompt-step.svg"
 permalink: /jiqiao/deepseek-excel-workflow/index.html
 ---
 
 ## 我踩过的坑
 
-2026 年 6 月，我帮同事整理一批客户备注时，一开始直接把整张表复制给 DeepSeek，结果它看得很吃力。后来我改成只给字段说明和 10 行样例，再让它生成处理规则，效率高很多。
+2026 年 6 月，我帮同事整理一批客户备注时，一开始直接把整张表复制给 DeepSeek，结果它看得很吃力。后来我改成只给字段说明和 10 行样例，再让它生成处理规则，效率高很多。输入组织方式可参考 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)；若要把结果接进脚本，再看 [API 第一次请求](/jiqiao/deepseek-api-first-request/)。
 
-![DeepSeek Excel 文本处理](https://tse-mm.bing.com/th?q=DeepSeek+Excel+text+processing)
+![DeepSeek Excel 文本处理](/static/images/photo-1504384308090-c894fdcc538d.jpg)
 
 ## 操作步骤
 

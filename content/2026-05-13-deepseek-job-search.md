@@ -8,15 +8,18 @@ tags:
   - deepseek
   - job-search
   - checklist
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%B1%82%E8%81%8C%E5%87%86%E5%A4%87"
+cover: "/static/images/photo-1523961131990-5ea7c61b2107.jpg"
 permalink: /jiqiao/2026-05-13-deepseek-job-search/index.html
+generated: true
 ---
 
 ## 我先列一张小清单
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)。
+
 
 2026-05-13 这天我试着用 DeepSeek 处理「求职准备」。这类任务不用一上来写长提示，我更喜欢先列清单，把要做的事情拆成能打勾的小项。
 
-![求职准备 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%B1%82%E8%81%8C%E5%87%86%E5%A4%87)
+![求职准备 示意图](/static/images/photo-1523961131990-5ea7c61b2107.jpg)
 
 ## 准备清单
 
@@ -54,3 +57,10 @@ permalink: /jiqiao/2026-05-13-deepseek-job-search/index.html
 ## 最后的小提醒
 
 我会把 DeepSeek 的结果当成“可修改草稿”。这个定位比较舒服：它帮我省掉从 0 到 1 的时间，我负责判断、删减和确认。这样用下来，压力小很多，也不容易被第一版结果带着跑。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

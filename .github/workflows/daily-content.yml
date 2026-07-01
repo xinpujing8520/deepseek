@@ -2,7 +2,7 @@ name: Daily DeepSeek Content
 
 on:
   schedule:
-    - cron: "15 1 * * *"
+    - cron: "12 0 * * *"
   workflow_dispatch:
     inputs:
       count:
@@ -10,11 +10,15 @@ on:
         required: false
         default: "1"
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+  TZ: "Asia/Shanghai"
+
 permissions:
   contents: write
 
 concurrency:
-  group: daily-content
+  group: daily-content-go-deepseek
   cancel-in-progress: false
 
 jobs:
@@ -23,11 +27,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 24
+          cache: npm
 
       - name: Install
         run: npm install
@@ -37,19 +44,61 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generate-articles.mjs --count=${{ github.event.inputs.count || '1' }}
 
-      - name: Commit generated article
+      - name: Add internal links to new posts
+        run: node tools/add-internal-links.js
+
+      - name: Commit generated content
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add content
+          git add content keywords.json
           if git diff --cached --quiet; then
             echo "No generated content changes."
           else
-            git commit -m "Add daily DeepSeek article"
+            git commit -m "Add daily DeepSeek article with internal links"
             git push
           fi
 
-      - name: Build
+      - name: Validate SVG assets
+        run: npm run validate:svg
+
+      - name: Build site
         env:
-          ELEVENTY_ENV: production
-        run: npm run build
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          BING_SITE_AUTH: ${{ secrets.BING_SITE_AUTH }}
+        run: |
+          if [ -n "$INDEXNOW_KEY" ]; then
+            printf '%s' "$INDEXNOW_KEY" > "./${INDEXNOW_KEY}.txt"
+          fi
+          if [ -n "$BING_SITE_AUTH" ]; then
+            printf '<?xml version="1.0"?>\n<users>\n  <user>%s</user>\n</users>\n' "$BING_SITE_AUTH" > ./BingSiteAuth.xml
+          fi
+          npm run build
+          if [ -n "$INDEXNOW_KEY" ]; then
+            printf '%s' "$INDEXNOW_KEY" > "./_site/${INDEXNOW_KEY}.txt"
+          fi
+          if [ -n "$BING_SITE_AUTH" ] && [ -f ./BingSiteAuth.xml ]; then
+            cp ./BingSiteAuth.xml ./_site/BingSiteAuth.xml
+          fi
+
+      - name: Execute Instant SEO Push to Bing
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          BING_DOMAIN: go-deepseek.com
+        run: |
+          if [ -z "$INDEXNOW_KEY" ]; then
+            echo "INDEXNOW_KEY not set, skip push."
+            exit 0
+          fi
+          DOMAIN="go-deepseek.com"
+          VALIDATION_URL="https://${DOMAIN}/${INDEXNOW_KEY}.txt"
+          for i in $(seq 1 30); do
+            STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" "${VALIDATION_URL}")
+            if [ "$STATUS_CODE" = "200" ]; then
+              echo "IndexNow validation file is live."
+              break
+            fi
+            echo "Waiting for CDN (${STATUS_CODE}) attempt ${i}/30..."
+            sleep 5
+          done
+          node tools/bing-instant-push.js

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - quick-news
   - qa
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E4%BD%BF%E7%94%A8%E5%BF%AB%E8%AE%B0"
+cover: "/static/images/photo-1581092795360-fd1ca04f0952.jpg"
 permalink: /jiqiao/2026-06-25-deepseek-quick-news/index.html
+generated: true
 ---
 
 ## 我这次主要问了几个点
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-25 我围绕「使用快记」做了一轮小测试。为了不写成教程，我直接把自己当时的几个追问记下来，后面再补处理方式。
 
-![使用快记 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E4%BD%BF%E7%94%A8%E5%BF%AB%E8%AE%B0)
+![使用快记 示意图](/static/images/photo-1581092795360-fd1ca04f0952.jpg)
 
 ## 这个场景要先给什么？
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-06-25-deepseek-quick-news/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

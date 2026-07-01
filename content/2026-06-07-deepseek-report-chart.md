@@ -8,15 +8,18 @@ tags:
   - deepseek
   - report-chart
   - checklist
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%8A%A5%E8%A1%A8%E8%A7%A3%E8%AF%BB"
+cover: "/static/images/photo-1522071820081-009f0129c71c.jpg"
 permalink: /jiqiao/2026-06-07-deepseek-report-chart/index.html
+generated: true
 ---
 
 ## 我先列一张小清单
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-07 这天我试着用 DeepSeek 处理「报表解读」。这类任务不用一上来写长提示，我更喜欢先列清单，把要做的事情拆成能打勾的小项。
 
-![报表解读 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%8A%A5%E8%A1%A8%E8%A7%A3%E8%AF%BB)
+![报表解读 示意图](/static/images/photo-1522071820081-009f0129c71c.jpg)
 
 ## 准备清单
 
@@ -54,3 +57,9 @@ permalink: /jiqiao/2026-06-07-deepseek-report-chart/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)

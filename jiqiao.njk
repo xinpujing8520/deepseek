@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: "DeepSeek 使用技巧目录"
-description: "DeepSeek 安装、提示词、接口接入、表格处理和代码阅读等实操文章目录。"
+description: "DeepSeek 安装、提示词、接口接入、表格处理和代码阅读等核心教程与参考文章目录。"
 keywords: "DeepSeek使用技巧,DeepSeek安装教程,DeepSeek提示词,DeepSeek API"
 permalink: /jiqiao/index.html
 ---
@@ -9,26 +9,45 @@ permalink: /jiqiao/index.html
   <div class="container">
     <p class="eyebrow">目录</p>
     <h1>DeepSeek 使用技巧目录</h1>
-    <p class="tagline">从安装到日常任务，按真实问题整理，方便逐篇查阅。</p>
+    <p class="tagline">下方「核心教程」为优先收录内容；更多参考文章供站内阅读，默认不进入搜索引擎索引。</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container toc-list">
-    {% for post in collections.articles %}
+  <div class="container">
+    <h2 style="margin-bottom:20px;">核心教程（可索引）</h2>
+    <div class="toc-list">
+    {% for post in collections.indexablePosts %}
     <article class="toc-card">
-      <img src="{{ post.data.cover }}" alt="{{ post.data.title }} 配图" width="240" height="160" loading="lazy">
+      {% set cardCover = post.data.coverImage or post.data.cover %}
+      {% if cardCover %}
+      <img src="{{ cardCover | assetUrl }}" alt="{{ post.data.title }} 配图" width="240" height="160" loading="lazy">
+      {% endif %}
       <div>
-        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
         <p>{{ post.data.description }}</p>
         <p class="meta">{{ post.date | readableDate }}</p>
-        <div class="tags">
-          {% for tag in post.data.tags | readableTags %}
-          <a class="tag-chip" href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
-          {% endfor %}
-        </div>
       </div>
     </article>
     {% endfor %}
+    </div>
+
+    <h2 style="margin:48px 0 20px;">全部参考文章</h2>
+    <div class="toc-list">
+    {% for post in collections.articles %}
+    {% if post.data.generated %}
+    <article class="toc-card">
+      {% if post.data.cover %}
+      <img src="{{ post.data.cover }}" alt="{{ post.data.title }} 配图" width="240" height="160" loading="lazy">
+      {% endif %}
+      <div>
+        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <p>{{ post.data.description }}</p>
+        <p class="meta">{{ post.date | readableDate }} · 参考文</p>
+      </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+    </div>
   </div>
 </section>

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - budget-plan
   - case
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E9%A2%84%E7%AE%97%E8%AE%A1%E5%88%92"
+cover: "/static/images/photo-1516321318423-f06f85e504b3.jpg"
 permalink: /jiqiao/2026-06-21-deepseek-budget-plan/index.html
+generated: true
 ---
 
 ## 一个真实小场景
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-21 我拿「预算计划」做了一次小测试，环境是 DeepSeek 2026.06 使用环境。原始材料不多，只有一段说明、几个限制条件和一个希望输出的样子。
 
-![预算计划 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E9%A2%84%E7%AE%97%E8%AE%A1%E5%88%92)
+![预算计划 示意图](/static/images/photo-1516321318423-f06f85e504b3.jpg)
 
 ## 一开始哪里不顺
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-06-21-deepseek-budget-plan/index.html
 ## 我的复盘方法
 
 我通常会把第一版结果分成三类：能直接用、稍微改、完全不对。完全不对的内容不会继续追问，我会回到提示里补条件。这样比对着错误结果一直修更省事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

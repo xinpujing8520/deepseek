@@ -8,15 +8,18 @@ tags:
   - deepseek
   - code-explain
   - note
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E4%BB%A3%E7%A0%81%E8%A7%A3%E9%87%8A"
+cover: "/static/images/photo-1460925895917-afdab827c52f.jpg"
 permalink: /jiqiao/2026-04-13-deepseek-code-explain/index.html
+generated: true
 ---
 
 ## 我这次怎么试
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)。
+
 
 2026-04-13 我用 DeepSeek 2026.06 使用环境 试了「代码解释」这个场景。我的目标很简单：看看它能不能把零散材料整理成一版能继续修改的草稿，而不是追求一次到位。
 
-![代码解释 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E4%BB%A3%E7%A0%81%E8%A7%A3%E9%87%8A)
+![代码解释 示意图](/static/images/photo-1460925895917-afdab827c52f.jpg)
 
 ## 三步操作
 
@@ -59,3 +62,9 @@ permalink: /jiqiao/2026-04-13-deepseek-code-explain/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - email-polish
   - checklist
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E9%82%AE%E4%BB%B6%E6%94%B9%E5%86%99"
+cover: "/static/images/photo-1468495244123-6c6c332eeece.jpg"
 permalink: /jiqiao/2026-04-06-deepseek-email-polish/index.html
+generated: true
 ---
 
 ## 我先列一张小清单
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-04-06 这天我试着用 DeepSeek 处理「邮件改写」。这类任务不用一上来写长提示，我更喜欢先列清单，把要做的事情拆成能打勾的小项。
 
-![邮件改写 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E9%82%AE%E4%BB%B6%E6%94%B9%E5%86%99)
+![邮件改写 示意图](/static/images/photo-1468495244123-6c6c332eeece.jpg)
 
 ## 准备清单
 
@@ -54,3 +57,9 @@ permalink: /jiqiao/2026-04-06-deepseek-email-polish/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)

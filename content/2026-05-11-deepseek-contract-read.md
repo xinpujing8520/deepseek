@@ -8,15 +8,18 @@ tags:
   - deepseek
   - contract-read
   - review
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%9D%A1%E6%AC%BE%E9%98%85%E8%AF%BB"
+cover: "/static/images/photo-1461749280684-dccba630e2f6.jpg"
 permalink: /jiqiao/2026-05-11-deepseek-contract-read/index.html
+generated: true
 ---
 
 ## 这次我看了三项
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-11 我用 DeepSeek 2026.04 桌面环境 重新试了「条款阅读」这个场景。说实话，这类任务最怕写得太大，最后看起来很厉害，实际落不到手上。我这次只看三项：输入准备、输出稳定度、后续修改成本。
 
-![条款阅读 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%9D%A1%E6%AC%BE%E9%98%85%E8%AF%BB)
+![条款阅读 示意图](/static/images/photo-1461749280684-dccba630e2f6.jpg)
 
 ## 输入准备：7 分
 
@@ -53,3 +56,9 @@ permalink: /jiqiao/2026-05-11-deepseek-contract-read/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [Windows 安装](/jiqiao/deepseek-windows-install/)

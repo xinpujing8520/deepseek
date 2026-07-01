@@ -8,15 +8,18 @@ tags:
   - deepseek
   - mindmap
   - case
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"
+cover: "/static/images/photo-1531297484001-80022131f5a1.jpg"
 permalink: /jiqiao/2026-05-15-deepseek-mindmap/index.html
+generated: true
 ---
 
 ## 一个真实小场景
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-15 我拿「思维导图」做了一次小测试，环境是 DeepSeek 2026.06 使用环境。原始材料不多，只有一段说明、几个限制条件和一个希望输出的样子。
 
-![思维导图 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE)
+![思维导图 示意图](/static/images/photo-1531297484001-80022131f5a1.jpg)
 
 ## 一开始哪里不顺
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-05-15-deepseek-mindmap/index.html
 ## 我会保留的原始信息
 
 日期、版本号、金额、姓名、地址、账号、承诺时间，这些我都会要求它原样保留。2026-05-15 这次整理时，我还会在提示里写一句“无法判断的内容不要补写”。这句话能减少它替你脑补。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

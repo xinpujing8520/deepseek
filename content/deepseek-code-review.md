@@ -3,20 +3,21 @@ layout: layouts/article.njk
 title: "DeepSeek 看代码前先给什么信息：别只贴一段报错"
 description: "整理让 DeepSeek 辅助阅读代码和排查问题时应提供的版本、目标、输入输出与复现步骤。"
 date: 2026-06-22
+featured: true
 category: "开发实践"
 tags:
   - deepseek
   - code-reading
   - debug
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+code+review"
+coverImage: "/static/posts/deepseek-api-retry-cover.svg"
 permalink: /jiqiao/deepseek-code-review/index.html
 ---
 
 ## 先讲结论
 
-如果你只贴一段报错，DeepSeek 很可能只能猜。2026 年 6 月我在一个 Node.js 20 项目里排查接口问题，真正有帮助的不是“报错全文”，而是版本、复现步骤、期望结果和相关代码一起给。
+如果你只贴一段报错，DeepSeek 很可能只能猜。2026 年 6 月我在一个 Node.js 20 项目里排查接口问题，真正有帮助的不是“报错全文”，而是版本、复现步骤、期望结果和相关代码一起给。写 Prompt 时可配合 [提示词三段式](/jiqiao/deepseek-prompt-writing/)；若走 API，先看 [API 第一次请求](/jiqiao/deepseek-api-first-request/)。
 
-![DeepSeek 代码阅读](https://tse-mm.bing.com/th?q=DeepSeek+debug+code)
+![DeepSeek 代码阅读](/static/images/photo-1550751827-4bd374c3f58b.jpg)
 
 ## 操作步骤
 

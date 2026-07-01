@@ -8,15 +8,18 @@ tags:
   - deepseek
   - table-clean
   - case
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E8%A1%A8%E6%A0%BC%E5%A4%84%E7%90%86"
+cover: "/static/images/photo-1563986768609-322da13575f3.jpg"
 permalink: /jiqiao/2026-04-20-deepseek-table-clean/index.html
+generated: true
 ---
 
 ## 一个真实小场景
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)。
+
 
 2026-04-20 我拿「表格处理」做了一次小测试，环境是 DeepSeek 2026.06 使用环境。原始材料不多，只有一段说明、几个限制条件和一个希望输出的样子。
 
-![表格处理 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E8%A1%A8%E6%A0%BC%E5%A4%84%E7%90%86)
+![表格处理 示意图](/static/images/photo-1563986768609-322da13575f3.jpg)
 
 ## 一开始哪里不顺
 
@@ -53,3 +56,9 @@ permalink: /jiqiao/2026-04-20-deepseek-table-clean/index.html
 ## 我的复盘方法
 
 我通常会把第一版结果分成三类：能直接用、稍微改、完全不对。完全不对的内容不会继续追问，我会回到提示里补条件。这样比对着错误结果一直修更省事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

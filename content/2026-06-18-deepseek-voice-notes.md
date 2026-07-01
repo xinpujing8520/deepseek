@@ -8,15 +8,18 @@ tags:
   - deepseek
   - voice-notes
   - review
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99"
+cover: "/static/images/photo-1496065187959-7f07b8353c55.jpg"
 permalink: /jiqiao/2026-06-18-deepseek-voice-notes/index.html
+generated: true
 ---
 
 ## 这次我看了三项
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [Windows 安装](/jiqiao/deepseek-windows-install/)。
+
 
 2026-06-18 我用 DeepSeek 2026.04 桌面环境 重新试了「语音转写」这个场景。说实话，这类任务最怕写得太大，最后看起来很厉害，实际落不到手上。我这次只看三项：输入准备、输出稳定度、后续修改成本。
 
-![语音转写 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99)
+![语音转写 示意图](/static/images/photo-1496065187959-7f07b8353c55.jpg)
 
 ## 输入准备：7 分
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-06-18-deepseek-voice-notes/index.html
 ## 最后的小提醒
 
 我会把 DeepSeek 的结果当成“可修改草稿”。这个定位比较舒服：它帮我省掉从 0 到 1 的时间，我负责判断、删减和确认。这样用下来，压力小很多，也不容易被第一版结果带着跑。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [Windows 安装](/jiqiao/deepseek-windows-install/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

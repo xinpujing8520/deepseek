@@ -8,15 +8,18 @@ tags:
   - deepseek
   - outline
   - case
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%96%87%E7%AB%A0%E6%8F%90%E7%BA%B2"
+cover: "/static/images/photo-1618005182384-a83a8bd57fbe.jpg"
 permalink: /jiqiao/2026-05-02-deepseek-outline/index.html
+generated: true
 ---
 
 ## 一个真实小场景
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-05-02 我拿「文章提纲」做了一次小测试，环境是 DeepSeek 2026.06 使用环境。原始材料不多，只有一段说明、几个限制条件和一个希望输出的样子。
 
-![文章提纲 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%96%87%E7%AB%A0%E6%8F%90%E7%BA%B2)
+![文章提纲 示意图](/static/images/photo-1618005182384-a83a8bd57fbe.jpg)
 
 ## 一开始哪里不顺
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-05-02-deepseek-outline/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

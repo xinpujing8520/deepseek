@@ -8,15 +8,18 @@ tags:
   - deepseek
   - weekly-report
   - steps
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E5%91%A8%E6%8A%A5%E6%95%B4%E7%90%86"
+cover: "/static/images/photo-1541746972996-4e0b0f43e02a.jpg"
 permalink: /jiqiao/2026-04-02-deepseek-weekly-report/index.html
+generated: true
 ---
 
 ## 我这次怎么试
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-04-02 我用 DeepSeek 2026.06 使用环境 试了「周报整理」这个场景。我的目标很简单：看看它能不能把零散材料整理成一版能继续修改的草稿，而不是追求一次到位。
 
-![周报整理 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E5%91%A8%E6%8A%A5%E6%95%B4%E7%90%86)
+![周报整理 示意图](/static/images/photo-1541746972996-4e0b0f43e02a.jpg)
 
 ## 三步操作
 
@@ -59,3 +62,10 @@ permalink: /jiqiao/2026-04-02-deepseek-weekly-report/index.html
 ## 我的复盘方法
 
 我通常会把第一版结果分成三类：能直接用、稍微改、完全不对。完全不对的内容不会继续追问，我会回到提示里补条件。这样比对着错误结果一直修更省事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

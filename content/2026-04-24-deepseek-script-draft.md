@@ -8,15 +8,18 @@ tags:
   - deepseek
   - script-draft
   - qa
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E8%84%9A%E6%9C%AC%E8%8D%89%E7%A8%BF"
+cover: "/static/images/photo-1568605117036-5fe5e7bab0b7.jpg"
 permalink: /jiqiao/2026-04-24-deepseek-script-draft/index.html
+generated: true
 ---
 
 ## 我这次主要问了几个点
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-04-24 我围绕「脚本草稿」做了一轮小测试。为了不写成教程，我直接把自己当时的几个追问记下来，后面再补处理方式。
 
-![脚本草稿 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E8%84%9A%E6%9C%AC%E8%8D%89%E7%A8%BF)
+![脚本草稿 示意图](/static/images/photo-1568605117036-5fe5e7bab0b7.jpg)
 
 ## 这个场景要先给什么？
 
@@ -53,3 +56,10 @@ permalink: /jiqiao/2026-04-24-deepseek-script-draft/index.html
 ## 保存成模板
 
 如果这个任务以后还会重复，就把提示保存下来。模板不用长，五六行就够：场景、输入材料、输出格式、语气、限制条件、复查要求。下次只换材料，稳定性会高很多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)

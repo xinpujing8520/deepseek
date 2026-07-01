@@ -8,15 +8,18 @@ tags:
   - deepseek
   - mobile-use
   - checklist
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E6%89%8B%E6%9C%BA%E4%BD%BF%E7%94%A8"
+cover: "/static/images/photo-1573497019940-1c28c88b4f3e.jpg"
 permalink: /jiqiao/2026-05-26-deepseek-mobile-use/index.html
+generated: true
 ---
 
 ## 我先列一张小清单
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)。
+
 
 2026-05-26 这天我试着用 DeepSeek 处理「手机使用」。这类任务不用一上来写长提示，我更喜欢先列清单，把要做的事情拆成能打勾的小项。
 
-![手机使用 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E6%89%8B%E6%9C%BA%E4%BD%BF%E7%94%A8)
+![手机使用 示意图](/static/images/photo-1573497019940-1c28c88b4f3e.jpg)
 
 ## 准备清单
 
@@ -54,3 +57,10 @@ permalink: /jiqiao/2026-05-26-deepseek-mobile-use/index.html
 ## 我的复盘方法
 
 我通常会把第一版结果分成三类：能直接用、稍微改、完全不对。完全不对的内容不会继续追问，我会回到提示里补条件。这样比对着错误结果一直修更省事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [DeepSeek 处理 Excel](/jiqiao/deepseek-excel-workflow/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)

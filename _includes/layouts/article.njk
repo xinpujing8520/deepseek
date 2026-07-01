@@ -7,10 +7,15 @@ layout: layouts/base.njk
       <p class="eyebrow">{{ category or "使用技巧" }}</p>
       <h1>{{ title }}</h1>
       <p class="tagline">{{ description }}</p>
-      <p class="meta">更新于 {{ page.date | readableDate }}</p>
-      {% if cover %}
-      <img src="{{ cover }}" alt="{{ title }} 配图" width="900" height="520" loading="lazy">
+      <p class="meta">更新于 {{ page.date | readableDate }}{% if updated %} · 修订 {{ updated | readableDate }}{% endif %}</p>
+
+      {% set heroImage = coverImage or cover %}
+      {% if heroImage %}
+      <figure class="post-cover">
+        <img src="{{ heroImage | assetUrl }}" alt="{{ title }}" width="900" height="520" loading="eager" decoding="async">
+      </figure>
       {% endif %}
+
       {% if video %}
       <section class="video-frame" aria-label="{{ title }} 视频安装教程">
         <div class="video-screen">
@@ -32,6 +37,7 @@ layout: layouts/base.njk
       }
       </script>
       {% endif %}
+
       {{ content | safe }}
     </article>
     <aside class="side-card">
@@ -41,9 +47,28 @@ layout: layouts/base.njk
         <a class="tag-chip" href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
         {% endfor %}
       </div>
-      <h2>继续阅读</h2>
-      <p><a href="/jiqiao/">返回使用技巧</a></p>
-      <p><a href="/">回到 DeepSeek 实用资料库</a></p>
+      <h2>核心教程</h2>
+      <ul style="padding-left:18px;line-height:1.8;">
+        {% for item in collections.indexablePosts | limit(5) %}
+        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <p><a href="/jiqiao/">返回使用技巧目录</a></p>
     </aside>
   </div>
 </section>
+
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "datePublished": page.date | htmlDateString,
+  "dateModified": (updated | htmlDateString) if updated else (page.date | htmlDateString),
+  "author": { "@type": "Organization", "name": site.brand },
+  "publisher": { "@type": "Organization", "name": site.brand, "url": site.url },
+  "image": site.url + ((coverImage or cover or site.ogImage or "/static/posts/deepseek-prompt-cover.svg") | assetUrl),
+  "mainEntityOfPage": site.url + page.url
+} | dump | safe }}
+</script>

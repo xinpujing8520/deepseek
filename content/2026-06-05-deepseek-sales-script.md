@@ -8,15 +8,18 @@ tags:
   - deepseek
   - sales-script
   - review
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E9%94%80%E5%94%AE%E8%AF%9D%E6%9C%AF"
+cover: "/static/images/photo-1486406146926-c627a92ad1ab.jpg"
 permalink: /jiqiao/2026-06-05-deepseek-sales-script/index.html
+generated: true
 ---
 
 ## 这次我看了三项
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-05 我用 DeepSeek 2026.04 桌面环境 重新试了「销售话术」这个场景。说实话，这类任务最怕写得太大，最后看起来很厉害，实际落不到手上。我这次只看三项：输入准备、输出稳定度、后续修改成本。
 
-![销售话术 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E9%94%80%E5%94%AE%E8%AF%9D%E6%9C%AF)
+![销售话术 示意图](/static/images/photo-1486406146926-c627a92ad1ab.jpg)
 
 ## 输入准备：7 分
 
@@ -53,3 +56,9 @@ permalink: /jiqiao/2026-06-05-deepseek-sales-script/index.html
 ## 什么时候该停下来自己改
 
 如果连续追问两轮还是不满意，我一般就不继续问了。说明前面的材料或目标没有讲清楚。这个时候自己改几句，再把修改后的版本给它参考，效果往往比继续要求“再自然一点”更好。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [Windows 安装](/jiqiao/deepseek-windows-install/)

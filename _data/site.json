@@ -1,0 +1,11 @@
+{
+  "brand": "DeepSeek 实用资料库",
+  "title": "DeepSeek 实用资料库：安装、API、提示词与使用技巧",
+  "description": "围绕 DeepSeek 安装、使用、提示词、API 接入与日常场景整理的实操资料库，面向简体中文用户。",
+  "keywords": "DeepSeek,DeepSeek教程,DeepSeek安装,DeepSeek API,DeepSeek提示词,深度求索",
+  "url": "https://go-deepseek.com",
+  "locale": "zh_CN",
+  "ogImage": "/static/posts/deepseek-prompt-cover.svg",
+  "assetVersion": "1",
+  "laId": "Kq5Yhoiwz3lvea2l"
+}

@@ -8,15 +8,18 @@ tags:
   - deepseek
   - workflow
   - note
-cover: "https://tse-mm.bing.com/th?q=DeepSeek+%E5%B7%A5%E4%BD%9C%E6%B5%81"
+cover: "/static/images/photo-1581091226825-a6a2a5aee158.jpg"
 permalink: /jiqiao/2026-06-27-deepseek-workflow/index.html
+generated: true
 ---
 
 ## 我这次怎么试
+下文涉及 DeepSeek 实操细节；若你尚未完成基础配置，可先阅读 [提示词怎么写](/jiqiao/deepseek-prompt-writing/)。
+
 
 2026-06-27 我用 DeepSeek 2026.06 使用环境 试了「工作流」这个场景。我的目标很简单：看看它能不能把零散材料整理成一版能继续修改的草稿，而不是追求一次到位。
 
-![工作流 示意图](https://tse-mm.bing.com/th?q=DeepSeek+%E5%B7%A5%E4%BD%9C%E6%B5%81)
+![工作流 示意图](/static/images/photo-1581091226825-a6a2a5aee158.jpg)
 
 ## 三步操作
 
@@ -59,3 +62,10 @@ permalink: /jiqiao/2026-06-27-deepseek-workflow/index.html
 ## 最后的小提醒
 
 我会把 DeepSeek 的结果当成“可修改草稿”。这个定位比较舒服：它帮我省掉从 0 到 1 的时间，我负责判断、删减和确认。这样用下来，压力小很多，也不容易被第一版结果带着跑。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [提示词怎么写](/jiqiao/deepseek-prompt-writing/)
+- [API 第一次请求](/jiqiao/deepseek-api-first-request/)
+- [用 DeepSeek 读代码](/jiqiao/deepseek-code-review/)
