@@ -43,9 +43,34 @@ const PILLARS = [
     label: "DeepSeek 处理 Excel",
     keywords: ["excel", "表格", "csv", "xlsx", "数据", "公式", "透视", "清洗"],
   },
+  {
+    path: "/jiqiao/deepseek-web-chat/",
+    label: "DeepSeek 网页版",
+    keywords: ["网页版", "网页", "web", "chat", "浏览器", "在线", "登录"],
+  },
+  {
+    path: "/jiqiao/deepseek-download-guide/",
+    label: "DeepSeek 下载",
+    keywords: ["下载", "安装包", "客户端", "电脑版", "手机版", "apk", "app"],
+  },
+  {
+    path: "/jiqiao/deepseek-how-to-start/",
+    label: "DeepSeek 怎么用",
+    keywords: ["怎么用", "新手", "入门", "第一次", "教程", "使用"],
+  },
+  {
+    path: "/jiqiao/deepseek-register-login/",
+    label: "注册与登录",
+    keywords: ["注册", "登录", "账号", "官网", "验证码", "手机号"],
+  },
+  {
+    path: "/jiqiao/deepseek-free-pricing/",
+    label: "DeepSeek 免费吗",
+    keywords: ["免费", "收费", "价格", "费用", "额度", "计费", "多少钱"],
+  },
 ];
 
-const DEFAULT_PILLARS = [PILLARS[0], PILLARS[1], PILLARS[4]];
+const DEFAULT_PILLARS = [PILLARS[6], PILLARS[8], PILLARS[0]];
 
 const SECTION_HEADER = "## 延伸阅读";
 
@@ -56,6 +81,11 @@ const PILLAR_SKIP = new Set([
   "deepseek-macos-setup.md",
   "deepseek-code-review.md",
   "deepseek-excel-workflow.md",
+  "deepseek-web-chat.md",
+  "deepseek-download-guide.md",
+  "deepseek-how-to-start.md",
+  "deepseek-register-login.md",
+  "deepseek-free-pricing.md",
 ]);
 
 function splitFrontMatter(raw) {

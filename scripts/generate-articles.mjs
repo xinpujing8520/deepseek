@@ -31,6 +31,11 @@ const PILLAR_PATHS = [
   "/jiqiao/deepseek-macos-setup/",
   "/jiqiao/deepseek-code-review/",
   "/jiqiao/deepseek-excel-workflow/",
+  "/jiqiao/deepseek-web-chat/",
+  "/jiqiao/deepseek-download-guide/",
+  "/jiqiao/deepseek-how-to-start/",
+  "/jiqiao/deepseek-register-login/",
+  "/jiqiao/deepseek-free-pricing/",
 ];
 
 const ARTICLE_JSON_SCHEMA = {

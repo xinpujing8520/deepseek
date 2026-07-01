@@ -102,3 +102,14 @@ jobs:
             sleep 5
           done
           node tools/bing-instant-push.js
+
+      - name: Push indexable URLs to Baidu
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+          BAIDU_PUSH_SITE: go-deepseek.com
+        run: |
+          if [ -z "$BAIDU_PUSH_TOKEN" ]; then
+            echo "BAIDU_PUSH_TOKEN not set, skip Baidu push."
+            exit 0
+          fi
+          node tools/baidu-url-push.js

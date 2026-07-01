@@ -11,7 +11,8 @@
     "mark:generated": "node tools/mark-generated.js",
     "build": "npm run validate:svg && eleventy",
     "generate": "node scripts/generate-articles.mjs",
-    "bing:push": "node tools/bing-instant-push.js"
+    "bing:push": "node tools/bing-instant-push.js",
+    "baidu:push": "node tools/baidu-url-push.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",

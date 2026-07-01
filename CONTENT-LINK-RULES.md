@@ -26,6 +26,11 @@
 | macOS 配置 | `/jiqiao/deepseek-macos-setup/` |
 | 代码阅读 | `/jiqiao/deepseek-code-review/` |
 | Excel 工作流 | `/jiqiao/deepseek-excel-workflow/` |
+| 网页版 | `/jiqiao/deepseek-web-chat/` |
+| 下载安装 | `/jiqiao/deepseek-download-guide/` |
+| 怎么用（新手） | `/jiqiao/deepseek-how-to-start/` |
+| 注册登录 | `/jiqiao/deepseek-register-login/` |
+| 免费与价格 | `/jiqiao/deepseek-free-pricing/` |
 | 站点首页 | `/` |
 
 ## 可链官方外链（同一域名每篇最多 1 次）
