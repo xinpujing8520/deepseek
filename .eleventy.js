@@ -13,6 +13,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("deepseek.css");
   eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("_redirects");
 
   eleventyConfig.addFilter("readableDate", (date) => {
     return new Intl.DateTimeFormat("zh-CN", {
