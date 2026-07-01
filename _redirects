@@ -1,4 +1,3 @@
-# deepseek-app.com → go-deepseek.com（永久跳转，保留路径）
 https://deepseek-app.com/* https://go-deepseek.com/:splat 301
 https://www.deepseek-app.com/* https://go-deepseek.com/:splat 301
 http://deepseek-app.com/* https://go-deepseek.com/:splat 301
